@@ -4,10 +4,10 @@
 
 ### Organisation und Architektur von Angular Projekten
 
-* Funktionen des Node Package Managers npm
-* Verdaccio als alternative NPM-Registry
-* Eigene NPM Registry konfigurieren und nutzen am Beispiel von Nexus
-* Monorepo mit Hilfe von Nx
+* [Funktionen des Node Package Managers npm](./01_organisation/01_npm-init.md)
+* [Verdaccio als alternative NPM-Registry](./01_organisation/02_verdaccio.md)
+* [Eigene NPM Registry konfigurieren und nutzen am Beispiel von Nexus](./01_organisation/03_nexus.md)
+* [Monorepo mithilfe von Nx](./01_organisation/04_nx.md)
 * Jenkins als CI Server für Angular Projekte
 * Bestimmung notwendiger Migrations-Schritte
 * Fragen und Disskusion
