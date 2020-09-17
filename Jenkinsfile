@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'cd rail && npm run test'
+               sh 'cd rail && npm run build'
             }
         }
     }
