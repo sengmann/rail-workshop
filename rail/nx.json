@@ -28,6 +28,9 @@
     "prototype-e2e": {
       "tags": [],
       "implicitDependencies": ["prototype"]
+    },
+    "corporate": {
+      "tags": []
     }
   }
 }

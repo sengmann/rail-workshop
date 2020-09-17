@@ -121,6 +121,48 @@
           }
         }
       }
+    },
+    "corporate": {
+      "projectType": "library",
+      "root": "libs/corporate",
+      "sourceRoot": "libs/corporate/src",
+      "prefix": "rail",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/corporate/tsconfig.lib.json",
+            "project": "libs/corporate/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/corporate/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/corporate/tsconfig.lib.json",
+              "libs/corporate/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/corporate/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/corporate/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
