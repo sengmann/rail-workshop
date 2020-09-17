@@ -23,14 +23,20 @@
   },
   "projects": {
     "prototype": {
-      "tags": []
+      "tags": ["scope:app"]
     },
     "prototype-e2e": {
       "tags": [],
       "implicitDependencies": ["prototype"]
     },
     "corporate": {
-      "tags": []
+      "tags": ["scope:shared"]
+    },
+    "admin": {
+      "tags": ["scope:admin"]
+    },
+    "trains": {
+      "tags": ["scope:trains"]
     }
   }
 }

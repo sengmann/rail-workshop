@@ -60,8 +60,20 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:shared",
+            "onlyDependOnLibsWithTags": ["scope:shared"]
+          },
+          {
+            "sourceTag": "scope:app",
+            "onlyDependOnLibsWithTags": ["scope:shared", "scope:app"]
+          },
+          {
+            "sourceTag": "scope:admin",
+            "onlyDependOnLibsWithTags": ["scope:shared", "scope:admin"]
+          },
+          {
+            "sourceTag": "scope:trains",
+            "onlyDependOnLibsWithTags": ["scope:shared", "scope:trains"]
           }
         ]
       }
