@@ -40,15 +40,10 @@ Sobald der Container gestartet hat, kann in der Konsole das initiale Administrat
 `docker exec jenkins-tutorial cat /var/jenkins_home/secrets/initialAdminPassword`
 abgelesen werden. Unter der URL [http://localhost:8080](http://localhost:8080) erreichen wir den Server. Nach Angabe des
 Passworts fahren wir mit der Installation der empfohlenen Plugins fort.
-
-Nach dem Abschluss klicken wir uns durch den Rest des Assistenten und fahren als Admin fort. Über den Button
-`Jenkins verwalten` gelangen wir zur Verwaltung und installieren die folgenden Plugins:
-
- 1. Blue Ocean
- 1. locale
  
- Um die Verbindung zu einem Repository aufnehmen zu können fügen wir unter *Security* -> *Manage Credentials* den
- privaten SSH-Key aus der Datei `jenkins_ssh_key` hinzu. 
- 
- Da die ganze Vorarbeit abgeschlossen ist, können wir nun ein Projekt erzeugen. Als Vorlage nutzen wir die Pipeline
- und vergeben den Namen angular-pipeline. Im Abschnitt Pipeline wählen wir `Pipeline Script`.
+Da die ganze Vorarbeit abgeschlossen ist, können wir nun ein Projekt erzeugen. Als Vorlage nutzen wir die Pipeline
+und vergeben den Namen angular-pipeline. Im Abschnitt Pipeline wählen wir `Pipeline Script from SCM`. Der Pfad wird
+auf `/home/` gesetzt.
+
+Jetzt können wir in der Oberfläche in der Angular Pipeline auf *jetzt bauen* klicken und die Pipeline manuell starten.
+
