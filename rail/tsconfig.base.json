@@ -16,7 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@rail/corporate": ["libs/corporate/src/index.ts"]
+      "@rail/corporate": ["libs/corporate/src/index.ts"],
+      "@rail/trains": ["libs/trains/src/index.ts"],
+      "@rail/admin": ["libs/admin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

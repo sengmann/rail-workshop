@@ -15,9 +15,13 @@ ul {
       padding: 14px 16px;
       text-decoration: none;
 
+      &.active {
+        color: black;
+        background-color: white;
+      }
       &:hover {
+        color: white;
         background-color: #111;
-
       }
     }
   }

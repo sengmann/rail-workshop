@@ -163,6 +163,90 @@
           "style": "scss"
         }
       }
+    },
+    "trains": {
+      "projectType": "library",
+      "root": "libs/trains",
+      "sourceRoot": "libs/trains/src",
+      "prefix": "rail",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/trains/tsconfig.lib.json",
+            "project": "libs/trains/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/trains/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/trains/tsconfig.lib.json",
+              "libs/trains/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/trains/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/trains/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "admin": {
+      "projectType": "library",
+      "root": "libs/admin",
+      "sourceRoot": "libs/admin/src",
+      "prefix": "rail",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/admin/tsconfig.lib.json",
+            "project": "libs/admin/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/admin/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/admin/tsconfig.lib.json",
+              "libs/admin/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/admin/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/admin/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

@@ -31,6 +31,12 @@
     },
     "corporate": {
       "tags": []
+    },
+    "trains": {
+      "tags": []
+    },
+    "admin": {
+      "tags": []
     }
   }
 }
