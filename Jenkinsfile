@@ -5,11 +5,6 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-   parameters {
-           gitParameter name: 'BRANCH_TAG',
-                        type: 'PT_BRANCH_TAG',
-                        defaultValue: 'master'
-    }
     environment {
         CI = 'true'
     }
