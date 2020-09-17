@@ -5,11 +5,23 @@ pipeline {
             args '-p 3000:3000'
         }
     }
+    environment {
+        CI = 'true'
+    }
     stages {
-        stage('Build') {
+        stage('Prepare') {
             steps {
                 sh 'cd rail && npm install'
-                sh 'npm run build'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'cd rail && npm run test'
+            }
+        }
+        stage('Build') {
+            steps {
+               sh 'cd rail && npm run test'
             }
         }
     }
