@@ -65,7 +65,7 @@
           },
           {
             "sourceTag": "scope:app",
-            "onlyDependOnLibsWithTags": ["scope:shared", "scope:app"]
+            "onlyDependOnLibsWithTags": ["scope:shared", "scope:app", "scope:admin", "scope:trains"]
           },
           {
             "sourceTag": "scope:admin",
