@@ -10,10 +10,10 @@
 * [Monorepo mithilfe von Nx](./01_organisation/04_nx.md)
 * [Jenkins als CI Server für Angular Projekte](./01_organisation/05_jenkins_ci.md)
 * Bestimmung notwendiger Migrations-Schritte
-* Fragen und Disskusion
+* Fragen und Discussion
 
 ### Zusammenführung von mehreren Angular Projekten
 
-* Wiederverwendbarkeit von Angular Komponenten mittels Angular-Bibliotheken
-* Updates von Angular Projekten
-* Integration von mehreren Angular Anwendungen innerhalb einer Hauptapplikation 
+* [Wiederverwendbarkeit von Angular Komponenten mittels Angular-Bibliotheken](./02_zusammenfuehrung/01_angular_reuse.md)
+* [Updates von Angular Projekten](./02_zusammenfuehrung/02_angular_updates.md)
+* [Integration von mehreren Angular Anwendungen innerhalb einer Hauptapplikation](./02_zusammenfuehrung/03_integration.md) 
