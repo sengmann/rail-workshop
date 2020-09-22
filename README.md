@@ -9,7 +9,7 @@
 * [Eigene NPM Registry konfigurieren und nutzen am Beispiel von Nexus](./01_organisation/03_nexus.md)
 * [Monorepo mithilfe von Nx](./01_organisation/04_nx.md)
 * [Jenkins als CI Server für Angular Projekte](./01_organisation/05_jenkins_ci.md)
-* Bestimmung notwendiger Migrations-Schritte
+* [Bestimmung notwendiger Migrations-Schritte](./01_organisation/06_migration.md)
 * Fragen und Discussion
 
 ### Zusammenführung von mehreren Angular Projekten
